@@ -324,6 +324,10 @@ The WordPress installation was completed through the browser.
 
 Step 14 — Verify the Website
 
+## DNS
+
+The site is accessible via a working domain name (not just the raw IP) using nip.io, which maps the EC2 instance's public IP directly to a domain: 13.62.224.144.nip.io
+
 The website was tested using the EC2 public IP address.
 
 Example:
