@@ -486,7 +486,27 @@ Technologies Used
 - GitHub
 
 ---
+---
 
+## Problem Context
+
+Small and medium-sized businesses in Nigeria often run their websites and applications on local, on-premise servers. These setups are fragile — they're vulnerable to power outages, hardware failure, and don't scale well as the business grows. This project migrates a simple SME application to AWS to address that problem, giving it better uptime and reliability.
+
+---
+
+## Infrastructure as Code
+
+I used Terraform to define the AWS infrastructure for this project instead of relying only on manual setup through the console. The configuration is in main.tf, variables.tf, and outputs.tf. This makes the deployment reproducible — anyone with the right AWS credentials could run this and get the same setup.
+
+## Architecture Diagram
+
+architecture-diagram.md has a diagram showing how the pieces fit together — user, CloudFront, EC2, and the Apache/PHP/MySQL/WordPress stack running inside it.
+
+## Cost Estimation
+
+cost-estimation.md breaks down the estimated monthly AWS cost for this setup, and explains why I chose a t3.micro instance and kept everything on one server to keep costs low for an SME.
+
+---
 Author
 
 SME-DIMZ WordPress Site
